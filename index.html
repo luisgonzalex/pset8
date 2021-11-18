@@ -98,7 +98,7 @@
                     .style("left", event.pageX + "px")
                     .style("top", event.pageY + "px")
                     .select("#value")
-                    .html("<span>" + String(d.total_count) + "</span>"); 
+                    .html(`<span>Total 311 Requests: ${d.total_count}</span>`); 
 
                 d3.select("#tooltip")
                 .classed("hidden", false);
