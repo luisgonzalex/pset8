@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+line {
+  stroke: red;
+}
+
+#tooltip {
+  position: absolute; /* allows the tooltip to be positioned within the svg */
+  padding: 5px;
+  background: white;
+  border: solid gray 1px;
+  z-index: 1; /* allows your tooltip to be visible on top of the svg */
+}
+
+#tooltip.hidden {
+  display: none;
+}
+
+/* add styles for axis ticks */
+g.tick line {
+  stroke: black;
+}
+
+g.tick text {
+  font-size: 14px;
+  fill: black;
+}
+
+.axis.y g.tick line {
+  display: none;
+}
+
+/* add hidden tick styles */
